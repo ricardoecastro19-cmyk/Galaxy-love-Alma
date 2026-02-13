@@ -139,7 +139,7 @@ window.addEventListener("resize",()=>{
 })
 
 // 🎵 Botón música
-const audio = document.getElementById("bgm")
+const audio = <audio id="bgm" src="music.mp3" loop></audio>
 const btn = document.getElementById("musicBtn")
 btn.onclick = () => {
   if (audio.paused){ audio.play(); btn.textContent="⏸ Música" }
@@ -149,3 +149,4 @@ btn.onclick = () => {
 </body>
 
 </html>
+
